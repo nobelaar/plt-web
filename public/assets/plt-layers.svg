@@ -1,0 +1,32 @@
+<svg width="480" height="360" viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#031226"/>
+      <stop offset="100%" stop-color="#062a46"/>
+    </linearGradient>
+    <linearGradient id="layer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00ffaa" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="480" height="360" rx="32" fill="url(#bg)"/>
+  <g filter="url(#glow)">
+    <path d="M60 220C140 210 210 180 240 140C270 100 330 60 420 70L420 280C320 300 250 300 180 280C110 260 60 240 60 220Z" fill="#0e3656" opacity="0.5"/>
+    <path d="M60 200C120 180 220 150 280 110C340 70 360 100 420 120V260C360 280 320 280 260 260C200 240 120 220 60 200Z" fill="#0b4a68" opacity="0.8"/>
+    <path d="M60 180C160 150 260 120 360 140C400 150 420 200 420 220C420 240 400 260 360 260C320 260 220 240 60 200V180Z" fill="url(#layer)"/>
+  </g>
+  <circle cx="320" cy="90" r="52" stroke="#7de6ff" stroke-opacity="0.6" stroke-width="2"/>
+  <circle cx="320" cy="90" r="28" fill="#092033" stroke="#00d4ff" stroke-width="1.5"/>
+  <circle cx="320" cy="90" r="8" fill="#7de6ff"/>
+  <rect x="80" y="80" width="120" height="80" rx="12" stroke="#00d4ff" stroke-opacity="0.5" stroke-width="1.5" fill="#071c30"/>
+  <rect x="100" y="100" width="80" height="8" rx="4" fill="#00d4ff"/>
+  <rect x="100" y="120" width="60" height="8" rx="4" fill="#7de6ff"/>
+  <rect x="100" y="140" width="40" height="8" rx="4" fill="#00ffaa"/>
+</svg>

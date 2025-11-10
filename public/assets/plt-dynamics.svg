@@ -1,0 +1,32 @@
+<svg width="480" height="360" viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#02111f"/>
+      <stop offset="100%" stop-color="#0b1f3a"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#ff72ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="360" rx="32" fill="url(#bg)"/>
+  <g stroke="#112c4b" stroke-width="1">
+    <path d="M0 60H480"/>
+    <path d="M0 120H480"/>
+    <path d="M0 180H480"/>
+    <path d="M0 240H480"/>
+    <path d="M0 300H480"/>
+    <path d="M80 0V360"/>
+    <path d="M160 0V360"/>
+    <path d="M240 0V360"/>
+    <path d="M320 0V360"/>
+    <path d="M400 0V360"/>
+  </g>
+  <path d="M0 260C40 230 80 210 120 210C160 210 200 250 240 250C280 250 320 200 360 190C400 180 440 210 480 230V360H0V260Z" fill="#08233b"/>
+  <path d="M0 200C40 190 80 170 120 170C160 170 200 220 240 220C280 220 320 170 360 160C400 150 440 180 480 200V360H0V200Z" fill="#0a3151" opacity="0.8"/>
+  <path d="M0 180C40 160 80 140 120 140C160 140 200 200 240 200C280 200 320 150 360 140C400 130 440 150 480 170V360H0V180Z" fill="url(#wave)" opacity="0.8"/>
+  <circle cx="120" cy="120" r="28" fill="#031a30" stroke="#00d4ff" stroke-width="2"/>
+  <circle cx="120" cy="120" r="8" fill="#7de6ff"/>
+  <circle cx="360" cy="90" r="36" fill="#031a30" stroke="#ff72ff" stroke-width="2"/>
+  <circle cx="360" cy="90" r="10" fill="#ff72ff"/>
+</svg>

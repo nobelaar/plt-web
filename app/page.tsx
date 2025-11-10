@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Roadmap } from './components/Roadmap';
 import { Section } from './components/Section';
 import { Button } from './components/Button';
+import { VisualShowcase } from './components/VisualShowcase';
 import { monetaryParameters, participationLinks, valuePillars } from './content/site-data';
 
 export default function Page() {
@@ -12,6 +13,13 @@ export default function Page() {
       <Navbar />
       <main>
         <Hero />
+        <Section
+          id="visuales"
+          title="Visualizar la red"
+          description="Añadimos una capa gráfica para mostrar cómo podrían verse los módulos, capas y ritmos de PLT una vez que la red cobre vida."
+        >
+          <VisualShowcase />
+        </Section>
         <Section id="que-es-plt" title="Qué es PLT">
           <p>
             PLT es un proyecto de blockchain en fase temprana. Está en construcción y busca establecer
