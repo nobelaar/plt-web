@@ -1,0 +1,21 @@
+{
+  "name": "plt-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "framer-motion": "^11.2.10",
+    "next": "15.0.0-canary.120",
+    "postcss": "^8.4.38",
+    "react": "18.3.1-canary-27b560b1a-20240718",
+    "react-dom": "18.3.1-canary-27b560b1a-20240718",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
+  }
+}

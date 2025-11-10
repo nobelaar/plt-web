@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-[#0a1b2e] text-[#b5b8c0] font-inter antialiased;
+}
+
+h1,
+h2,
+h3 {
+  @apply text-[#00d4ff] font-spaceGrotesk;
+}
+
+a {
+  @apply text-[#00d4ff] transition-colors duration-200;
+}
+
+a:hover {
+  @apply text-[#7de6ff];
+}
+
+.section-container {
+  @apply max-w-screen-xl mx-auto px-6 py-16;
+}
