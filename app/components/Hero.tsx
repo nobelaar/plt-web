@@ -48,7 +48,7 @@ export function Hero() {
             y aportar desde las primeras etapas.
           </motion.p>
           <motion.div className="flex flex-col gap-4 sm:flex-row" variants={item}>
-            <Button href="#" variant="primary">
+            <Button href="/how-to-use" variant="primary">
               Documentación base
             </Button>
             <Button href="#" variant="outline">

@@ -65,7 +65,6 @@ export default function Page() {
             </li>
           </ul>
         </Section>
-
         <Section id="token-plt" title="Token PLT">
           <p>
             El token PLT es una pieza del proyecto, no un activo final. Forma parte del diseño

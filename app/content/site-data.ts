@@ -1,6 +1,7 @@
 export const navLinks = [
   { label: 'Qué es PLT', href: '/#que-es-plt' },
   { label: 'Cómo funciona', href: '/#como-funciona' },
+  { label: 'Cómo usar PLT', href: '/how-to-use' },
   { label: 'Token', href: '/#token-plt' },
   { label: 'Participar', href: '/#participar' },
   { label: 'Roadmap', href: '/#roadmap' },
