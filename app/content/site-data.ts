@@ -1,23 +1,24 @@
 export const navLinks = [
-  { label: 'Qué es PLT', href: '#que-es-plt' },
-  { label: 'Cómo funciona', href: '#como-funciona' },
-  { label: 'Token', href: '#token-plt' },
-  { label: 'Participar', href: '#participar' },
-  { label: 'Roadmap', href: '#roadmap' }
+  { label: 'Qué es PLT', href: '/#que-es-plt' },
+  { label: 'Cómo funciona', href: '/#como-funciona' },
+  { label: 'Token', href: '/#token-plt' },
+  { label: 'Participar', href: '/#participar' },
+  { label: 'Roadmap', href: '/#roadmap' },
+  { label: 'Validadores', href: '/validadores' }
 ];
 
 export const footerLinks = [
   { label: 'GitHub', href: 'https://github.com/' },
-  { label: 'Documentación', href: '#participar' },
-  { label: 'Comunidad', href: '#participar' },
-  { label: 'Whitepaper', href: '#que-es-plt' }
+  { label: 'Documentación', href: '/#participar' },
+  { label: 'Comunidad', href: '/#participar' },
+  { label: 'Whitepaper', href: '/#que-es-plt' }
 ];
 
 export const roadmapItems = [
-  { quarter: 'Q4 2025', milestone: 'Testnet pública' },
-  { quarter: 'Q1 2026', milestone: 'Validadores empresariales' },
-  { quarter: 'Q2 2026', milestone: 'Gobernanza comunitaria' },
-  { quarter: 'Q4 2026', milestone: 'Mainnet soberana' }
+  { quarter: '2024', milestone: 'Diseño inicial: documentación técnica y definición de arquitectura.' },
+  { quarter: '2025', milestone: 'Prototipo y comunidad: liberación de código alfa y sesiones de revisión conjunta.' },
+  { quarter: '2025/2026', milestone: 'Testnet pública: red abierta para validar performance, gobernanza y parámetros monetarios.' },
+  { quarter: '2026', milestone: 'Camino a mainnet: auditorías, ajustes e implementación gradual del lanzamiento.' }
 ];
 
 export const monetaryParameters = [
@@ -28,26 +29,26 @@ export const monetaryParameters = [
 ];
 
 export const participationLinks = [
-  { label: 'Documentación técnica', href: '#participar', variant: 'primary' as const },
+  { label: 'Documentación técnica', href: '/#participar', variant: 'primary' as const },
   { label: 'GitHub', href: 'https://github.com/', variant: 'outline' as const },
-  { label: 'Comunidad', href: '#participar', variant: 'outline' as const },
-  { label: 'Guía para validadores', href: '#participar', variant: 'outline' as const }
+  { label: 'Comunidad', href: '/#participar', variant: 'outline' as const },
+  { label: 'Guía para validadores', href: '/validadores', variant: 'outline' as const }
 ];
 
 export const valuePillars = [
   {
     title: 'Autonomía',
     description:
-      'Participar en la red es equivalente a gobernarla. Cada decisión surge de los validadores y de la comunidad que respalda el consenso.'
+      'El diseño apunta a que quienes operen la infraestructura puedan decidir su rumbo sin depender de custodios externos.'
   },
   {
     title: 'Transparencia',
     description:
-      'La arquitectura abierta permite auditar código, procesos y decisiones. Nada se esconde detrás de cajas negras.'
+      'Cada componente, parámetro y documento se publica para que cualquier persona pueda auditarlo y cuestionarlo.'
   },
   {
     title: 'Sostenibilidad',
     description:
-      'Un modelo de incentivos diseñado para mantenerse en el tiempo y adaptarse a las necesidades de quienes la operan.'
+      'El modelo económico se explora con cautela para equilibrar incentivos y costos operativos a largo plazo.'
   }
 ];

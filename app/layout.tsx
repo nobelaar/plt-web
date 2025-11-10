@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: '%s | PLT'
   },
   description:
-    'PLT es una blockchain soberana construida con Cosmos SDK para ofrecer infraestructura digital abierta, transparente y eficiente.',
+    'PLT es un proyecto de blockchain en fase temprana que investiga cómo construir infraestructura digital abierta y auditable.',
   keywords: [
     'PLT',
     'Blockchain argentina',
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     siteName: 'PLT',
     title: 'PLT — Poder, Libertad, Tecnología',
     description:
-      'Infraestructura soberana basada en Cosmos SDK para operar sin intermediarios y con gobernanza abierta.'
+      'Proyecto en desarrollo que explora una infraestructura soberana basada en Cosmos SDK, abierta a revisión pública.'
   },
   twitter: {
     card: 'summary_large_image',
     title: 'PLT — Poder, Libertad, Tecnología',
     description:
-      'Infraestructura soberana basada en Cosmos SDK para operar sin intermediarios y con gobernanza abierta.'
+      'Proyecto en fase temprana que documenta el diseño de una infraestructura digital abierta y auditable.'
   },
   alternates: {
     canonical: '/'

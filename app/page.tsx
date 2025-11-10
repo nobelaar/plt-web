@@ -14,24 +14,33 @@ export default function Page() {
         <Hero />
         <Section id="que-es-plt" title="Qué es PLT">
           <p>
-            PLT es una blockchain soberana. Su propósito es construir una infraestructura digital
-            donde el valor, la gobernanza y las decisiones pertenezcan a quienes mantienen la red
-            activa. Nació en Argentina con la convicción de que una tecnología verdaderamente libre no
-            necesita permisos ni dueños. PLT no busca reemplazar al sistema financiero, sino ofrecer
-            una alternativa sustentable, auditable y controlada por sus propios participantes.
+            PLT es un proyecto de blockchain en fase temprana. Está en construcción y busca establecer
+            una infraestructura digital abierta, auditable y utilizable sin intermediarios.
+          </p>
+          <p>
+            No pretende reemplazar sistemas existentes; explora un modelo alternativo que aprende de
+            experiencias previas y documenta cada decisión. La red todavía no existe y todo avanza por
+            medio de pruebas, discusiones técnicas y validaciones conceptuales.
           </p>
         </Section>
 
         <Section id="como-funciona" title="Cómo funciona">
           <p>
-            La red adopta un consenso Proof of Stake (PoS) y una arquitectura modular inspirada en el
-            ecosistema Cosmos. Cada componente es auditable y puede evolucionar sin comprometer la
-            estabilidad del núcleo.
+            La arquitectura base se apoya en Cosmos SDK para construir módulos personalizables y en
+            CometBFT como motor de consenso Proof of Stake. Todo se implementa en Go para mantener un
+            entorno conocido y auditable.
+          </p>
+          <p>
+            Las interfaces iniciales previstas son CLI, gRPC y REST. Permiten operar nodos, integrar
+            servicios y automatizar flujos sin depender de capas externas.
+          </p>
+          <p>
+            Estos componentes son un punto de partida y pueden cambiar si la revisión técnica colectiva
+            lo requiere.
           </p>
           <ul className="grid gap-4 rounded-2xl border border-white/5 bg-white/5 p-8 text-sm text-[#d0d2d8] md:grid-cols-2">
             <li>
               <span className="font-semibold text-[#00d4ff]">Motor de consenso:</span> CometBFT
-              (Tendermint)
             </li>
             <li>
               <span className="font-semibold text-[#00d4ff]">Framework base:</span> Cosmos SDK
@@ -40,22 +49,28 @@ export default function Page() {
               <span className="font-semibold text-[#00d4ff]">Lenguaje:</span> Go 1.22+
             </li>
             <li>
-              <span className="font-semibold text-[#00d4ff]">Interfaz:</span> CLI, gRPC y REST
+              <span className="font-semibold text-[#00d4ff]">Interfaces iniciales:</span> CLI, gRPC y REST
             </li>
             <li className="md:col-span-2">
-              <span className="font-semibold text-[#00d4ff]">Diseño modular y auditable</span>
+              <span className="font-semibold text-[#00d4ff]">Notas:</span> Arquitectura sujeta a ajustes
+              conforme avance el desarrollo.
             </li>
           </ul>
         </Section>
 
         <Section id="token-plt" title="Token PLT">
           <p>
-            PLT es el token nativo de la red y la base de su economía interna. Su emisión mantiene el
-            equilibrio entre seguridad, participación y estabilidad a largo plazo.
+            El token PLT es una pieza del proyecto, no un activo final. Forma parte del diseño
+            económico que se está modelando para sostener la red cuando exista.
+          </p>
+          <p>
+            De manera provisional se adoptan los parámetros de inflación del ecosistema Cosmos. Sirven
+            como referencia para las discusiones actuales y pueden modificarse tras las revisiones en
+            comunidad.
           </p>
           <div className="grid gap-6 md:grid-cols-2">
             <div className="space-y-2">
-              <p className="text-sm uppercase tracking-wide text-[#7de6ff]">Parámetros monetarios</p>
+              <p className="text-sm uppercase tracking-wide text-[#7de6ff]">Parámetros provisionales</p>
               <ul className="space-y-2 text-sm text-[#d0d2d8]">
                 {monetaryParameters.map((parameter) => (
                   <li key={parameter}>{parameter}</li>
@@ -63,8 +78,8 @@ export default function Page() {
               </ul>
             </div>
             <div className="rounded-2xl border border-[#00d4ff]/30 bg-[#102b45]/40 p-6 text-base text-[#d0d2d8]">
-              “No existen reservas fundacionales ni asignaciones privadas: cada token nace del mismo
-              proceso que mantiene viva la red. En PLT, la propiedad no se hereda: se valida.”
+              Estos valores no son definitivos. El modelo monetario queda abierto a comentarios,
+              auditorías y ajustes colectivos antes de cualquier despliegue.
             </div>
           </div>
         </Section>
@@ -85,21 +100,25 @@ export default function Page() {
 
         <Section id="participar" title="Participar">
           <p>
-            PLT está abierta a quienes quieran construir desde el inicio. Si sos desarrollador, podés
-            contribuir al código. Si sos empresa o validador, podés asegurar la red y recibir
-            recompensas por bloque. Si solo querés entender el proyecto, podés unirte a la comunidad y
-            formar parte del proceso.
+            Esta etapa es temprana y experimental. Buscamos desarrolladores que quieran revisar
+            código, empresas interesadas en validar supuestos, comunidades que analicen el enfoque y
+            observadores que documenten el proceso. Todo aporte ayuda a definir qué vale la pena
+            llevar a testnet.
           </p>
-            <div className="flex flex-col flex-wrap gap-4 sm:flex-row">
-              {participationLinks.map((link) => (
-                <Button key={link.label} href={link.href} variant={link.variant}>
-                  {link.label}
-                </Button>
-              ))}
-            </div>
+          <div className="flex flex-col flex-wrap gap-4 sm:flex-row">
+            {participationLinks.map((link) => (
+              <Button key={link.label} href={link.href} variant={link.variant}>
+                {link.label}
+              </Button>
+            ))}
+          </div>
         </Section>
 
         <Section id="roadmap" title="Roadmap">
+          <p>
+            El plan refleja lo aprendido hasta ahora y puede ajustarse si las pruebas o la comunidad lo
+            sugieren. Cada fase se documenta para que cualquiera pueda seguir el avance.
+          </p>
           <Roadmap />
         </Section>
       </main>

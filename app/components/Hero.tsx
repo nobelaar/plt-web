@@ -31,22 +31,23 @@ export function Hero() {
         variants={container}
       >
         <motion.h1 className="text-4xl font-spaceGrotesk leading-tight md:text-6xl" variants={item}>
-          Infraestructura soberana para la nueva economía.
+          Infraestructura digital en construcción.
         </motion.h1>
         <motion.p className="max-w-3xl text-lg leading-relaxed text-[#d0d2d8]" variants={item}>
-          PLT es una blockchain construida desde cero con Cosmos SDK, pensada para ofrecer una base
-          digital abierta, transparente y eficiente. Una red donde empresas y comunidades pueden
-          validar, construir y operar sin intermediarios.
+          PLT es un proyecto que investiga cómo una cadena basada en estándares abiertos puede servir
+          a organizaciones y comunidades que valoran transparencia y control técnico. La red todavía
+          no existe; estamos documentando el diseño base y buscando quienes quieran revisar, cuestionar
+          y aportar desde las primeras etapas.
         </motion.p>
         <motion.div className="flex flex-col gap-4 sm:flex-row" variants={item}>
           <Button href="#" variant="primary">
-            Documentación
+            Documentación base
           </Button>
           <Button href="#" variant="outline">
             Repositorio
           </Button>
           <Button href="#participar" variant="outline">
-            Participar como validador
+            Participar en etapa temprana
           </Button>
         </motion.div>
       </motion.div>
