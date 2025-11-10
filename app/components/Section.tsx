@@ -1,7 +1,7 @@
 'use client';
 
-import { motion, useAnimation } from 'framer-motion';
-import { useEffect, type ReactNode } from 'react';
+import { motion, useAnimation, useInView } from 'framer-motion';
+import { useEffect, useRef, type ReactNode } from 'react';
 
 interface SectionProps {
   id?: string;
@@ -21,12 +21,16 @@ const containerVariants = {
 
 export function Section({ id, title, description, children }: SectionProps) {
   const controls = useAnimation();
+  const ref = useRef<HTMLDivElement | null>(null);
+  const inView = useInView(ref, { once: true, margin: '-25% 0px' });
 
   useEffect(() => {
-    controls.start('visible').catch(() => {
-      // Prevent unhandled rejection if component unmounts before animation completes.
-    });
-  }, [controls]);
+    if (inView) {
+      controls.start('visible').catch(() => {
+        // Prevent unhandled rejection if component unmounts before animation completes.
+      });
+    }
+  }, [controls, inView]);
 
   return (
     <motion.section
@@ -34,6 +38,7 @@ export function Section({ id, title, description, children }: SectionProps) {
       className="section-container space-y-6"
       initial="hidden"
       animate={controls}
+      ref={ref}
       variants={containerVariants}
     >
       {title && <h2 className="text-3xl font-spaceGrotesk md:text-4xl">{title}</h2>}

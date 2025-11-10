@@ -1,9 +1,4 @@
-const roadmapItems = [
-  { quarter: 'Q4 2025', milestone: 'Testnet pública' },
-  { quarter: 'Q1 2026', milestone: 'Validadores empresariales' },
-  { quarter: 'Q2 2026', milestone: 'Gobernanza comunitaria' },
-  { quarter: 'Q4 2026', milestone: 'Mainnet soberana' }
-];
+import { roadmapItems } from '../content/site-data';
 
 export function Roadmap() {
   return (

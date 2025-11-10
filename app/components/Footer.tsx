@@ -1,9 +1,5 @@
-const footerLinks = [
-  { label: 'GitHub', href: '#' },
-  { label: 'Documentación', href: '#' },
-  { label: 'Comunidad', href: '#' },
-  { label: 'Whitepaper', href: '#' }
-];
+import Link from 'next/link';
+import { footerLinks } from '../content/site-data';
 
 export function Footer() {
   return (
@@ -15,9 +11,9 @@ export function Footer() {
         </p>
         <nav className="flex flex-wrap gap-4 text-sm">
           {footerLinks.map((link) => (
-            <a key={link.label} href={link.href} className="hover:text-[#7de6ff]">
+            <Link key={link.label} href={link.href} className="hover:text-[#7de6ff]">
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>

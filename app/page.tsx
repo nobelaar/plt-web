@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Roadmap } from './components/Roadmap';
 import { Section } from './components/Section';
 import { Button } from './components/Button';
+import { monetaryParameters, participationLinks, valuePillars } from './content/site-data';
 
 export default function Page() {
   return (
@@ -56,10 +57,9 @@ export default function Page() {
             <div className="space-y-2">
               <p className="text-sm uppercase tracking-wide text-[#7de6ff]">Parámetros monetarios</p>
               <ul className="space-y-2 text-sm text-[#d0d2d8]">
-                <li>Inflación mínima: 7% anual</li>
-                <li>Inflación máxima: 20% anual</li>
-                <li>Variación máxima por año: 13%</li>
-                <li>Objetivo de staking: 67% del suministro total</li>
+                {monetaryParameters.map((parameter) => (
+                  <li key={parameter}>{parameter}</li>
+                ))}
               </ul>
             </div>
             <div className="rounded-2xl border border-[#00d4ff]/30 bg-[#102b45]/40 p-6 text-base text-[#d0d2d8]">
@@ -71,23 +71,7 @@ export default function Page() {
 
         <Section id="proposito" title="Propósito y visión">
           <div className="grid gap-6 md:grid-cols-3">
-            {[
-              {
-                title: 'Autonomía',
-                description:
-                  'Participar en la red es equivalente a gobernarla. Cada decisión surge de los validadores y de la comunidad que respalda el consenso.'
-              },
-              {
-                title: 'Transparencia',
-                description:
-                  'La arquitectura abierta permite auditar código, procesos y decisiones. Nada se esconde detrás de cajas negras.'
-              },
-              {
-                title: 'Sostenibilidad',
-                description:
-                  'Un modelo de incentivos diseñado para mantenerse en el tiempo y adaptarse a las necesidades de quienes la operan.'
-              }
-            ].map((card) => (
+            {valuePillars.map((card) => (
               <div
                 key={card.title}
                 className="flex flex-col gap-3 rounded-2xl border border-white/5 bg-white/5 p-6"
@@ -106,20 +90,13 @@ export default function Page() {
             recompensas por bloque. Si solo querés entender el proyecto, podés unirte a la comunidad y
             formar parte del proceso.
           </p>
-          <div className="flex flex-col flex-wrap gap-4 sm:flex-row">
-            <Button href="#" variant="primary">
-              Documentación técnica
-            </Button>
-            <Button href="#" variant="outline">
-              GitHub
-            </Button>
-            <Button href="#" variant="outline">
-              Comunidad
-            </Button>
-            <Button href="#" variant="outline">
-              Guía para validadores
-            </Button>
-          </div>
+            <div className="flex flex-col flex-wrap gap-4 sm:flex-row">
+              {participationLinks.map((link) => (
+                <Button key={link.label} href={link.href} variant={link.variant}>
+                  {link.label}
+                </Button>
+              ))}
+            </div>
         </Section>
 
         <Section id="roadmap" title="Roadmap">

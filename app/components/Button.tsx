@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 interface ButtonProps {
@@ -17,8 +18,8 @@ const variants: Record<NonNullable<ButtonProps['variant']>, string> = {
 
 export function Button({ href, children, variant = 'primary' }: ButtonProps) {
   return (
-    <a href={href} className={`${baseStyles} ${variants[variant]}`}>
+    <Link href={href} className={`${baseStyles} ${variants[variant]}`}>
       {children}
-    </a>
+    </Link>
   );
 }
